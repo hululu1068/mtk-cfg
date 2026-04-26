@@ -29,15 +29,15 @@ detect_mtwifi() {
 				if [ "$band" = "2g" ]; then
 					htmode="HE40"
 					htbsscoex="1"
-					ssid="MyRouter"
+					ssid="ImmortalWrt-2.4G"
 				elif [ "$band" = "5g" ]; then
 					htmode="HE160"
 					htbsscoex="0"
-					ssid="MyRouter_5G"
+					ssid="ImmortalWrt-5G"
 				elif [ "$band" = "6g" ]; then
 					htmode="HE160"
 					htbsscoex="0"
-					ssid="MyRouter_6G"
+					ssid="ImmortalWrt-6G"
 				fi
 
 				uci -q batch <<-EOF
